@@ -29,7 +29,6 @@ body {
 
 .side_navbar {
   width: 250px;
-  max-height: 100%;
   position: fixed;
   overflow-x: hidden;
   z-index: 1;
@@ -57,17 +56,29 @@ body {
   .nav_list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 35px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1.5rem;
 
     .nav_link {
-      border: 2px solid #c9c9c9;
+      border: 8px solid #0000;
+      border-radius: 10px;
+      border-width: 2px;
+      border-image: linear-gradient(
+          90deg,
+          rgba(30, 27, 90, 1) 0%,
+          rgba(114, 39, 95, 1) 52%,
+          rgba(35, 97, 109, 1) 90%
+        )
+        5;
+      color: rgba(255, 255, 255, 0.77);
       border-radius: 5px;
       padding: 10px 20px;
       display: flex;
       align-items: center;
+      justify-content: center;
       flex: 1;
       gap: 5px;
       cursor: pointer;
